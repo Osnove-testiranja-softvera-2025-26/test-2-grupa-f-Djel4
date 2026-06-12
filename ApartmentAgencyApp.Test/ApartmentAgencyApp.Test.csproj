@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApartmentAgencyServiceTest.cs" />
+    <Compile Include="PICTParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +126,10 @@
       <Project>{f38fa7c0-804b-4dc8-825c-1a4fa20a802a}</Project>
       <Name>ApartmentAgencyApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PICTFactors.txt" />
+    <Content Include="PICTResults.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

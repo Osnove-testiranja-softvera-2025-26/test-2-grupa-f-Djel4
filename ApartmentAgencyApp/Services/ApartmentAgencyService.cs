@@ -10,8 +10,13 @@ namespace ApartmentAgencyApp.Services
         private readonly IDateCalculationService _dateCalculationService;
         private readonly IApartmentService _apartmentService;
         private readonly IReservationService _reservatonService;
-
-
+        //dodat konstruktor
+        public ApartmentAgencyService(IDateCalculationService dateCalculationService, IApartmentService apartmentService, IReservationService reservatonService)
+        {
+            _dateCalculationService = dateCalculationService;
+            _apartmentService = apartmentService;
+            _reservatonService = reservatonService;
+        }
         public void MakeApartmentReservation(ReservationRequest request)
         {
             RequestDaysInfo daysInfo = _dateCalculationService.GetDaysInfo(request.DateOfArrival, request.DateOfDeparture);

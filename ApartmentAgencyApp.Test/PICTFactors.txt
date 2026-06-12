@@ -1,0 +1,4 @@
+distanceFromTheBeach: 200, 500, 1000, 1500, 2000 
+percentOfPositiveReviews: 50, 60, 65, 80, 85
+apartmentType: Studio, BedOnly, StudioWithTerrace
+renovatedTheLastYear: true, false
